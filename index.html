@@ -1,0 +1,1264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--meta-->
+  <title> cyber | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{about.presentation}}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://{{about.username}}.github.io">
+  <meta property="og:title" content="{{about.name}} | {{about.rol}} | Portfolio">
+  <meta property="og:description" content="{{about.presentation}}">
+  <meta property="og:image" content="{{about.avatar}}">
+  <meta property="og:image:secure_url" content="{{about.avatar}}">
+  <meta property="og:site_name" content="{{about.name}} | {{about.rol}} | Portfolio">
+  <meta name="twitter:card" content="photo">
+  <meta name="twitter:creator" content="@{{about.username}}">
+  <meta name="twitter:title" content="{{about.name}} | {{about.rol}} | Portfolio">
+  <meta name="twitter:description" content="{{about.presentation}}">
+  <meta name="twitter:image" content="{{about.avatar}}">
+  <meta name="twitter:image:width" content="200">
+  <meta name="twitter:image:height" content="200">
+  <meta name="keywords" content="{{about.name}}, {{technologies.technologies.keys() | join(', ')}}" />
+  <link href="https://{{about.username}}.github.io" rel="canonical">
+  <!--meta-->
+
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./src/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+
+  <link rel="stylesheet" href="main.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+     <!-- sidebar.jinja -->
+<aside class="sidebar" data-sidebar>
+
+    <div class="sidebar-info">
+  
+      <figure class="avatar-box">
+        <img src="image/IMG_7750.JPG" alt="{{about.name}}" width="80">
+      </figure>
+  
+      <div class="info-content">
+        <h1 class="name" title="{{about.name}}">UDEAGBALA ONYINYE <br> SONIA</h1>
+  
+        <p class="title"> Penetration Tester </p>
+      </div>
+  
+      <button class="info_more-btn" data-sidebar-btn>
+        <span>Show Contacts</span>
+  
+        <ion-icon name="chevron-down"></ion-icon>
+      </button>
+  
+    </div>
+  
+    <div class="sidebar-info_more">
+  
+      <div class="separator"></div>
+  
+      <ul class="contacts-list">
+  
+        <li class="contact-item">
+  
+          <div class="icon-box">
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+  
+          <div class="contact-info">
+            <p class="contact-title">Email</p>
+  
+            <a href="#" class="contact-link">onyiisonia@gmail.com</a>
+          </div>
+  
+        </li>
+  
+        <li class="contact-item">
+  
+          <div class="icon-box">
+            <ion-icon name="phone-portrait-outline"></ion-icon>
+          </div>
+  
+          <div class="contact-info">
+            <p class="contact-title">Phone</p>
+  
+            <a href="tel:{{about.phone}}" class="contact-link">+2348036515545</a>
+          </div>
+  
+        </li>
+  
+        <li class="contact-item">
+  
+          
+  
+        </li>
+  
+        <li class="contact-item">
+  
+          <div class="icon-box">
+            <ion-icon name="location-outline"></ion-icon>
+          </div>
+  
+          <div class="contact-info">
+            <p class="contact-title">Location</p>
+  
+            <address>Lagos. Nigeria</address>
+          </div>
+  
+        </li>
+  
+      </ul>
+  
+      <div class="separator"></div>
+  
+      <ul class="social-list">
+  
+        
+        <li class="social-item">
+            <a href="https:/www.linkedin.com/in/onyinye-sonia" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="https://github.com/ONYINYE456" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="https:/https://github.com/ONYINYE456" class="social-link" target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https:/https://github.com/ONYINYE456" class="social-link" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+  
+      </ul>
+  
+    </div>
+  
+  </aside>
+
+    
+
+    <!--
+        - #SIDEBAR ends---
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      
+<!-- navbar.jinja -->
+<nav class="navbar">
+
+    <ul class="navbar-list">
+  
+      <li class="navbar-item">
+        <button class="navbar-link  active" data-nav-link>About</button>
+      </li>
+  
+      <li class="navbar-item">
+        <button class="navbar-link" data-nav-link>Resume</button>
+      </li>
+  
+      <li class="navbar-item">
+        <button class="navbar-link" data-nav-link>projects</button>
+      </li>
+  
+      <li class="navbar-item">
+        <button class="navbar-link" data-nav-link>Certifications</button>
+      </li>
+  
+      <li class="navbar-item">
+        <button class="navbar-link" data-nav-link>Contact</button>
+      </li>
+  
+    </ul>
+  
+  </nav>
+  
+
+      
+      <!--#navbar ends
+        - #ABOUT
+      -->
+
+      
+<!-- about.jinja -->
+<article class="about  active" data-page="about">
+
+    <header>
+      <h2 class="h2 article-title">About me</h2>
+    </header>
+  
+    <section class="about-text">
+  
+
+      <p>Experienced Junior Penetration Tester and Ethical Hacker with a proven track record of conducting
+         comprehensive security assessments and implementing robust measures to fortify application security. 
+         Continuously learning and adapting to emerging cybersecurity trends to ensure the highest level of 
+         protection. Passionate about safeguarding digital assets and staying ahead of evolving threats.</p>
+      
+  
+    </section>
+  
+  
+    <!--
+            - service
+          -->
+  
+    <section class="service">
+  
+      <h3 class="h3 service-title">What i'm doing</h3>
+  
+      <ul class="service-list">
+  
+        <li class="service-item">
+  
+          <div class="service-icon-box">
+            <img src="image/investigation.png" alt="design icon" width="50" height="50">
+          </div>
+  
+          <div class="service-content-box">
+            <h4 class="h4 service-item-title">Security Assessments</h4>
+  
+            <p class="service-item-text">
+                Proficient in performing comprehensive security assessments of networks, systems,
+                 and web applications to identify vulnerabilities and potential entry points for cyber threats.
+            </p>
+          </div>
+  
+        </li>
+
+        <li class="service-item">
+  
+            <div class="service-icon-box">
+              <img src="image/risk-management.png" alt="design icon" width="50" height="50">
+            </div>
+    
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Vulnerability Management</h4>
+    
+              <p class="service-item-text">
+                Experienced in analyzing and prioritizing vulnerabilities based on their severity 
+                and potential impact on business operations.
+                 Proficient in recommending and implementing remediation measures to mitigate risks effectively.
+              </p>
+            </div>
+    
+          </li>
+
+          <li class="service-item">
+  
+            <div class="service-icon-box">
+              <img src="image/security.png" alt="design icon" width="50" height="50">
+            </div>
+    
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Penetration Testing</h4>
+    
+              <p class="service-item-text">
+                Skilled in simulating real-world cyberattacks to assess the resilience of systems and applications
+                 against various threat vectors. Capable of exploiting vulnerabilities ethically to demonstrate potential risks.
+              </p>
+            </div>
+    
+          </li>
+
+          <li class="service-item">
+  
+            <div class="service-icon-box">
+              <img src="image/security.png" alt="design icon" width="50" height="50">
+            </div>
+    
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Technical Proficiency</h4>
+    
+              <p class="service-item-text">
+                 Familiar with a wide range of security tools and technologies used in penetration testing,
+                 including but not limited to network scanners, vulnerability assessment tools, and exploitation frameworks.
+              </p>
+            </div>
+    
+          </li>
+  
+      </ul>
+  
+    </section>
+  
+  
+    <!--
+            - testimonials
+          -->
+    
+    <section class="testimonials">
+  
+      <h3 class="h3 testimonials-title">Soft Skills</h3>
+  
+      <ul class="testimonials-list has-scrollbar">
+
+        <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
+  
+            <figure class="testimonials-avatar-box">
+              <img src="image/problem-solving.png" alt="{{skill.title}}" width="60" data-testimonials-avatar>
+            </figure>
+  
+            <h4 class="h4 testimonials-item-title" data-testimonials-title>Problem-Solving</h4>
+  
+            <div class="testimonials-text" data-testimonials-text>
+              <p>
+                Finding security issues creatively.
+              </p>
+            </div>
+  
+          </div>
+        </li>
+
+        
+        <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
+  
+            <figure class="testimonials-avatar-box">
+              <img src="image/ethical-conduct.png" alt="skill.title" width="60" data-testimonials-avatar>
+            </figure>
+  
+            <h4 class="h4 testimonials-item-title" data-testimonials-title>Ethical Conduct</h4>
+  
+            <div class="testimonials-text" data-testimonials-text>
+              <p>
+                Always doing what's right.
+              </p>
+            </div>
+  
+          </div>
+        </li>
+
+        <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
+  
+            <figure class="testimonials-avatar-box">
+              <img src="image/teamwork.png" alt="skill.title" width="60" data-testimonials-avatar>
+            </figure>
+  
+            <h4 class="h4 testimonials-item-title" data-testimonials-title>Teamwork</h4>
+  
+            <div class="testimonials-text" data-testimonials-text>
+              <p>
+                Working well with others.
+              </p>
+            </div>
+  
+          </div>
+        </li>
+  
+        <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
+  
+            <figure class="testimonials-avatar-box">
+              <img src="image/speech-bubble.png" alt="{{skill.title}}" width="60" data-testimonials-avatar>
+            </figure>
+  
+            <h4 class="h4 testimonials-item-title" data-testimonials-title>Effective Communication</h4>
+  
+            <div class="testimonials-text" data-testimonials-text>
+              <p>
+                Explaining tech stuff clearly.
+              </p>
+            </div>
+  
+          </div>
+        </li>
+  
+  
+         </ul>
+  
+    </section>
+
+  
+    <section class="clients">
+  
+      <h3 class="h3 clients-title">TECHNOLOGICAL SKILLS</h3>
+  
+      <ul class="clients-list has-scrollbar">
+        
+  
+        <li class="clients-item">
+          <a href="#">
+            <img src="image/python.png" alt="client logo" width="50" height="50">
+          </a>
+        </li>
+  
+        <li class="clients-item">
+          <a href="#">
+            <img src="image/sql-file.png" alt="client logo" width="50" height="50">
+          </a>
+        </li>
+
+        <li class="clients-item">
+          <a href="#">
+            <img src="image/html (1).png" alt="client logo" width="50" height="50">
+          </a>
+        </li>
+
+        <li class="clients-item">
+          <a href="#">
+            <img src="image/icons8-linux-48.png" alt="client logo" width="50" height="50">
+          </a>
+        </li>
+
+        <li class="clients-item">
+          <a href="#">
+            <img src="image/icons8-github-50.png" alt="client logo" width="50" height="50">
+          </a>
+        </li>
+
+        <li class="clients-item">
+          <a href="#">
+            <img src="image/icons8-windows-48.png" alt="client logo" width="50" height="50">
+          </a>
+        </li>
+
+        <li class="clients-item">
+          <a href="#">
+            <img src="image/js.png" alt="client logo" width="50" height="50">
+          </a>
+        </li>
+
+        <li class="clients-item">
+          <a href="#">
+            <img src="image/css-3 (1).png" alt="client logo" width="50" height="50">
+          </a>
+        </li>
+
+        <li class="clients-item">
+          <a href="#">
+            <img src="image/structure.png" alt="client logo" width="50" height="50">
+          </a>
+        </li>
+  
+      </ul>
+
+  
+    </section>
+
+
+    <section class="clients">
+  
+     
+
+  
+    </section>
+    
+    
+  
+  </article>
+  
+
+
+      <!-- about section ends --
+        - #RESUME
+      -->
+
+    
+<!-- resume.jinja -->
+<article class="resume" data-page="resume">
+
+    <header>
+      <h2 class="h2 article-title">Resume</h2>
+    </header>
+  
+    <section class="timeline">
+  
+      <div class="title-wrapper">
+        <div class="icon-box">
+          <ion-icon name="book-outline"></ion-icon>
+        </div>
+  
+        <h3 class="h3">Education</h3>
+      </div>
+  
+      <ol class="timeline-list">
+  
+        
+  
+        <li class="timeline-item">
+  
+          <h4 class="h4 timeline-item-title">INSTITUTE OF MANAGEMENT AND TECHNOLOGY ENUGU </h4>
+  
+          <span>2007 - 2012</span>
+  
+          <p class="timeline-text">
+            	COOPERATIVE ECONOMICE AND MANGEMENT 
+          </p>
+  
+        </li>
+
+        <li class="timeline-item">
+  
+          <h4 class="h4 timeline-item-title">Connak Foundation </h4>
+  
+          <span>2022 - 2022</span>
+  
+          <p class="timeline-text">
+           Full-stack Developer
+          </p>
+  
+        </li>
+  
+        
+  
+      </ol>
+  
+    </section>
+  
+    <section class="timeline">
+  
+      <div class="title-wrapper">
+        <div class="icon-box">
+          <ion-icon name="book-outline"></ion-icon>
+        </div>
+  
+        <h3 class="h3">Experience</h3>
+      </div>
+  
+      <ol class="timeline-list">
+  
+        
+  
+        <li class="timeline-item">
+  
+          <h4 class="h4 timeline-item-title">Mastercard Cybersecurity virtual experience program on Forage </h4>
+  
+          <span>April 2024</span>
+  
+          <p class="timeline-text">
+            Security Awareness Analyst
+          </p>
+  
+        </li>
+  
+        <li class="timeline-item">
+  
+          <h4 class="h4 timeline-item-title">Innovation Growth Hub-Internship   </h4>
+  
+          <span>2022 -2023</span>
+  
+          <p class="timeline-text">
+            Front-End Developer
+          </p>
+  
+        </li>
+
+        <li class="timeline-item">
+  
+          <h4 class="h4 timeline-item-title">Chinto Technologies    </h4>
+  
+          <span>2015 - 2018</span>
+  
+          <p class="timeline-text">
+            Customer Service Specialist
+          </p>
+  
+        </li>
+
+        <li class="timeline-item">
+  
+          <h4 class="h4 timeline-item-title">Odu College, Ebighi Edu   </h4>
+  
+          <span>2014 - 2015</span>
+  
+          <p class="timeline-text">
+            Civics Studies Teacher (NYSC)
+          </p>
+  
+        </li>
+  
+      </ol>
+  
+    </section>
+  
+    <!-- Languages -->
+    
+    <section class="skill">
+  
+      <h3 class="h3 skills-title">Languages</h3>
+  
+      <ul class="skills-list content-card">
+  
+        
+  
+        <li class="skills-item">
+          <div class="title-wrapper">
+            <h5 class="h5">English Language</h5>
+            
+            <data value="{{language.value[:-1]}}">60%</data>
+            
+          </div>
+          
+          <div class="skill-progress-bg">
+            <div class="skill-progress-fill" style="width: 60%; "></div>
+          </div>
+          
+        </li>
+  
+        
+  
+      </ul>
+  
+    </section>
+    <br>
+    
+  
+  
+    <!-- My Skills -->
+  
+    
+    <section class="skill">
+  
+      <h3 class="h3 skills-title">My Skills</h3>
+  
+      <ul class="skills-list content-card">
+  
+        
+  
+        <li class="skills-item">
+          <div class="title-wrapper">
+            <h5 class="h5">Penetration Testing</h5>
+            
+            <data value="{{skill.value[:-1]}}">70%</data>
+            
+          </div>
+        
+          <div class="skill-progress-bg">
+            <div class="skill-progress-fill" style="width: 70% "></div>
+          </div>
+        
+        </li>
+
+        <li class="skills-item">
+          <div class="title-wrapper">
+            <h5 class="h5">Incident Response</h5>
+            
+            <data value="{{skill.value[:-1]}}">50%</data>
+            
+          </div>
+        
+          <div class="skill-progress-bg">
+            <div class="skill-progress-fill" style="width: 50% "></div>
+          </div>
+        
+        </li>
+
+        <li class="skills-item">
+          <div class="title-wrapper">
+            <h5 class="h5">Network Protocol</h5>
+            
+            <data value="{{skill.value[:-1]}}">60%</data>
+            
+          </div>
+        
+          <div class="skill-progress-bg">
+            <div class="skill-progress-fill" style="width: 60% "></div>
+          </div>
+        
+        </li>
+  
+        
+  
+      </ul>
+  
+    </section>
+    
+  
+  </article>
+  
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      
+<!-- portfolio.jinja -->
+<article class="portfolio" data-page="projects">
+
+    <header>
+      <h2 class="h2 article-title">projects</h2>
+    </header>
+  
+    <section class="projects">
+  
+      <ul class="filter-list">
+  
+        <li class="filter-item">
+          <button class="active" data-filter-btn>All</button>
+        </li>
+  
+      
+        <li class="filter-item">
+          <button data-filter-btn></button>
+        </li>
+        
+  
+      </ul>
+  
+      <div class="filter-select-box">
+  
+        <button class="filter-select" data-select>
+  
+          <div class="select-value" data-selecct-value>Select category</div>
+  
+          <div class="select-icon">
+            <ion-icon name="chevron-down"></ion-icon>
+          </div>
+  
+         </button>
+  
+        <ul class="select-list">
+  
+          <li class="select-item">
+            <button data-select-item>All</button>
+          </li>
+  
+          
+          <li class="select-item">
+            <button data-select-item></button>
+          </li>
+          
+  
+        </ul>
+  
+      </div>
+  
+      <ul class="project-list">
+  
+        
+  
+        <li class="project-item  active" data-filter-item data-category="{{project.category | lower}}">
+          <a href="" target="_blank">
+  
+            <figure class="project-img">
+              <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+  
+              <img src="image/maxresdefault.jpg" alt="{{project.title}}" loading="lazy">
+            </figure>
+  
+            <h3 class="project-title">Hack the box</h3>
+  
+            <p class="project-category">Contributed actively to Hack The Box community by solving challenging machines,
+               sharing write-ups, and collaborating with peers, demonstrating practical penetration testing skills.</p>
+  
+          </a>
+        </li>
+
+        <li class="project-item  active" data-filter-item data-category="{{project.category | lower}}">
+          <a href="https://onyinye456.github.io/Password-Strength-Background.github.io/" target="_blank">
+  
+            <figure class="project-img">
+              <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+  
+              <img src="image/Screenshot (38).png" alt="{{project.title}}" loading="lazy">
+            </figure>
+  
+            <h3 class="project-title">Password-Strength-Background</h3>
+  
+            <p class="project-category">Implemented a dynamic login form where password strength determines the clarity of the background picture.
+               Stronger passwords reveal a clearer image, showcasing strong security emphasis in web development.</p>
+  
+          </a>
+        </li>
+
+        <li class="project-item  active" data-filter-item data-category="{{project.category | lower}}">
+          <a href="https://onyinye456.github.io/Password-Strength-Background.github.io/" target="_blank">
+  
+            <figure class="project-img">
+              <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+  
+              <img src="image/HA-TryHackMe.jpg" alt="{{project.title}}" loading="lazy">
+            </figure>
+  
+            <h3 class="project-title">Try Hack Me</h3>
+  
+            <p class="project-category">Engaged in TryHackMe to enhance cybersecurity skills through hands-on challenges, practical exercises, 
+              and immersive learning experiences, demonstrating proficiency in penetration testing and ethical hacking.</p>
+  
+          </a>
+        </li>
+  
+        
+  
+      </ul>
+  
+    </section>
+  
+  </article>
+  
+
+
+      <!--
+        - #certification
+      -->
+
+         <!-- blog.jinja -->
+<article class="blog" data-page="certifications">
+
+    <header>
+      <h2 class="h2 article-title">certifications</h2>
+    </header>
+  
+    <section class="blog-posts">
+  
+      <ul class="blog-posts-list">
+  
+      
+  
+        <li class="blog-post-item">
+          <a href="https://app.cybrary.it/courses/api/certificate/CC-d473a8da-f5e5-44bd-a83c-cd8da5b8bd87/view" target="_blank">
+  
+            <figure class="blog-banner-box">
+              <img src="image/Screenshot (31).png" alt="{{post.title}}" loading="lazy">
+            </figure>
+  
+            <div class="blog-content">
+  
+              <div class="blog-meta">
+                <p class="blog-category">Cybaray</p>
+  
+                <span class="dot"></span>
+  
+                <time datetime="{{post.datetime}}">feb 2024</time>
+              </div>
+  
+              <h3 class="h3 blog-item-title">Become a Penetration Tester </h3>
+  
+              <p class="blog-text">
+                I enrolled in Cybaray's "Become a Penetration Tester" course to delve into cybersecurity. 
+                It equipped me with skills to assess and strengthen digital defenses, spanning 30 intensive sessions.
+              </p>
+  
+            </div>
+  
+          </a>
+        </li>
+  
+        
+        <li class="blog-post-item">
+          <a href="https://coursera.org/share/2aa144a67621dfd4bbe0e235639b0743" target="_blank">
+  
+            <figure class="blog-banner-box">
+              <img src="image/Screenshot (22).png" alt="{{post.title}}" loading="lazy">
+            </figure>
+  
+            <div class="blog-content">
+  
+              <div class="blog-meta">
+                <p class="blog-category">Google</p>
+  
+                <span class="dot"></span>
+  
+                <time datetime="{{post.datetime}}">feb 2024</time>
+              </div>
+  
+              <h3 class="h3 blog-item-title">Google Cybersecurity Professional Certificate</h3>
+  
+              <p class="blog-text">
+                The Google Cybersecurity Professional Certificate provides comprehensive training in cybersecurity, covering topics 
+                like network security, cryptography, and incident response, ideal for aspiring cybersecurity professionals
+              </p>
+  
+            </div>
+  
+          </a>
+        </li>
+
+        <li class="blog-post-item">
+          <a href="" target="_blank">
+  
+            <figure class="blog-banner-box">
+              <img src="image/96e57ec4-87fd-42b3-9b33-76bece522898 (2).png" alt="{{post.title}}" loading="lazy">
+            </figure>
+  
+            <div class="blog-content">
+  
+              <div class="blog-meta">
+                <p class="blog-category">EC-Council
+                  </p>
+  
+                <span class="dot"></span>
+  
+                <time datetime="{{post.datetime}}">March 2024</time>
+              </div>
+  
+              <h3 class="h3 blog-item-title">Ethical Hacking Essentials (EHE)</h3>
+  
+              <p class="blog-text">
+                The Ethical Hacking Essentials (EHE) course by EC-Council offers fundamental training in ethical hacking techniques, 
+                equipping learners with skills to identify and address cybersecurity vulnerabilities responsibly.
+              </p>
+  
+            </div>
+  
+          </a>
+        </li>
+
+        <li class="blog-post-item">
+          <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/mastercard/vcKAB5yYAgvemepGQ_Mastercard_66hMLzrsbEB7qqMrx_1712657590068_completion_certificate.pdf" target="_blank">
+  
+            <figure class="blog-banner-box">
+              <img src="image/Screenshot (32).png" alt="{{post.title}}" loading="lazy">
+            </figure>
+  
+            <div class="blog-content">
+  
+              <div class="blog-meta">
+                <p class="blog-category">April 2024</p>
+  
+                <span class="dot"></span>
+  
+                <time datetime="">Mastercard - Cybersecurity Job Simulation</time>
+              </div>
+  
+              <h3 class="h3 blog-item-title">Forage</h3>
+  
+              <p class="blog-text">
+               Mastercard's Cybersecurity Job Simulation provides hands-on experience in tackling real-world cybersecurity challenges,
+               preparing professionals with practical skills crucial for securing digital environments effectively.
+              </p>
+  
+            </div>
+  
+          </a>
+        </li>
+
+        <li class="blog-post-item">
+          <a href="https://simpli-web.app.link/e/7KtGL1ASJIb" target="_blank">
+  
+            <figure class="blog-banner-box">
+              <img src="image/sql.png" alt="{{post.title}}" loading="lazy">
+            </figure>
+  
+            <div class="blog-content">
+  
+              <div class="blog-meta">
+                <p class="blog-category">Simplilearn</p>
+  
+                <span class="dot"></span>
+  
+                <time datetime="{{post.datetime}}">April 2024</time>
+              </div>
+  
+              <h3 class="h3 blog-item-title">Introduction to SQL</h3>
+  
+              <p class="blog-text">
+                Introduction to SQL" provides foundational knowledge of Structured Query Language, teaching essential database
+                 querying skills vital for managing and manipulating data efficiently in various applications and industries.
+              </p>
+  
+            </div>
+  
+          </a>
+        </li>
+
+        <li class="blog-post-item">
+          <a href="https://app.cybrary.it/courses/api/certificate/CC-9c2e730e-ef11-4290-a4bf-b96413174a3b/view" target="_blank">
+  
+            <figure class="blog-banner-box">
+              <img src="image/Screenshot (34).png" alt="{{post.title}}" loading="lazy">
+            </figure>
+  
+            <div class="blog-content">
+  
+                  <div class="blog-meta">
+                    <p class="blog-category">Cybaray</p>
+      
+                    <span class="dot"></span>
+      
+                    <time datetime="{{post.datetime}}">March 2024</time>
+                  </div>
+      
+                  <h3 class="h3 blog-item-title">Cisco Certified Network Associate (CCNA) Certification</h3>
+      
+                  <p class="blog-text">
+                       The Cisco Certified Network Associate (CCNA) certification validates expertise in networking fundamentals, 
+                       preparing professionals to configure, troubleshoot, and manage networks effectively in diverse IT environments.
+                  </p>
+      
+                </div>
+      
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="" target="_blank">
+      
+                <figure class="blog-banner-box">
+                  <img src="image/b951375f-460c-42b6-9b22-b0f225d51570 (2).png" alt="{{post.title}}" loading="lazy">
+                </figure>
+      
+                <div class="blog-content">
+      
+                      <div class="blog-meta">
+                        <p class="blog-category">EC-Council</p>
+          
+                        <span class="dot"></span>
+          
+                        <time datetime="{{post.datetime}}">March 2024</time>
+                      </div>
+          
+                      <h3 class="h3 blog-item-title">SQL Injection Attacks</h3>
+          
+                      <p class="blog-text">
+                          "SQL Injection Attacks" by EC-Council covers exploiting SQL vulnerabilities to gain unauthorized access,
+                           manipulate data, or execute arbitrary commands, posing serious security risks to databases and web applications.
+                      </p>
+          
+                    </div>
+          
+                  </a>
+                </li>
+
+                <li class="blog-post-item">
+                  <a href="https://app.cybrary.it/courses/api/certificate/CC-39206022-8c69-420e-bbf7-eccb3d2ad4c5/view" target="_blank">
+          
+                    <figure class="blog-banner-box">
+                      <img src="image/Screenshot (35).png" alt="{{post.title}}" loading="lazy">
+                    </figure>
+          
+                    <div class="blog-content">
+          
+                          <div class="blog-meta">
+                            <p class="blog-category">Cybaray</p>
+              
+                            <span class="dot"></span>
+              
+                            <time datetime="post.datetime">March 2024</time>
+                          </div>
+              
+                          <h3 class="h3 blog-item-title">OWASP Top 10</h3>
+              
+                          <p class="blog-text">
+                            The OWASP Top 10 is a critical guide outlining the most prevalent web application security risks,
+                             aiding developers and security professionals in prioritizing and mitigating vulnerabilities effectively.
+                          </p>
+              
+                        </div>
+              
+                      </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                      <a href="" target="_blank">
+              
+                        <figure class="blog-banner-box">
+                          <img src="image/b4aa9bb8-9418-431c-a488-a27bf0f4381a (1).png" alt="{{post.title}}" loading="lazy">
+                        </figure>
+              
+                        <div class="blog-content">
+              
+                              <div class="blog-meta">
+                                <p class="blog-category">EC-Council</p>
+                  
+                                <span class="dot"></span>
+                  
+                                <time datetime="{{post.datetime}}">March 2024</time>
+                              </div>
+                  
+                              <h3 class="h3 blog-item-title">Introduction to Dark Web, Anonymity, and Cryptocurrency</h3>
+                  
+                              <p class="blog-text">
+                                Introduction to Dark Web, Anonymity, and Cryptocurrency" delves into hidden online networks,
+                                 privacy tools, and digital currencies, exploring their implications and security challenges.
+                              </p>
+                  
+                            </div>
+                  
+                          </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                          <a href="https://app.cybrary.it/courses/api/certificate/CC-904b862d-fcaf-4453-aa78-53ca453fd5e2/view" target="_blank">
+                  
+                            <figure class="blog-banner-box">
+                              <img src="image/Screenshot (36).png" alt="{{post.title}}" loading="lazy">
+                            </figure>
+                  
+                            <div class="blog-content">
+                  
+                                  <div class="blog-meta">
+                                    <p class="blog-category">Cybaray</p>
+                      
+                                    <span class="dot"></span>
+                      
+                                    <time datetime="{{post.datetime}}">April 2024</time>
+                                  </div>
+                      
+                                  <h3 class="h3 blog-item-title">Physical PenTesting</h3>
+                      
+                                  <p class="blog-text">
+                                    Physical PenTesting involves simulated attacks on physical security measures, 
+                                    such as locks and access controls, to identify weaknesses and assess an organization's overall security posture.
+                                  </p>
+                      
+                                </div>
+                      
+                              </a>
+                            </li>
+  
+      </ul>
+  
+    </section>
+  
+  </article>
+
+
+      <!--
+        - #CONTACT
+        <!--contact.jinja -->
+<article class="contact" data-page="contact">
+
+    <header>
+      <h2 class="h2 article-title">Contact</h2>
+    </header>
+  
+    <section class="mapbox" data-mapbox>
+      <figure>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.4631091547!2d3.119144481049848!3d6.548369368072229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1713261343125!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" 
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </figure>
+    </section>
+  
+    <section class="contact-form">
+  
+      <h3 class="h3 form-title">Contact Form</h3>
+  
+      <form action="mailto:onyiisonia@gmail.com" method="POST" class="form" data-form>
+  
+        <div class="input-wrapper">
+          <input type="text" name="UDEAGBALA ONYINYE SONIA" class="form-input" placeholder="Full name" required data-form-input>
+  
+          <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+        </div>
+  
+        <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+  
+        <button class="form-btn" type="submit" disabled data-form-btn>
+          <ion-icon name="paper-plane"></ion-icon>
+          <span>Send Message</span>
+        </button>
+  
+      </form>
+  
+    </section>
+  
+  </article>
+  
+
+      
+
+    </div>
+
+  </main>
+  <!--
+            - testimonials modal
+          -->
+  
+          <div class="modal-container" data-modal-container>
+  
+            <div class="overlay" data-overlay></div>
+        
+            <section class="testimonials-modal">
+        
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+        
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img src="./src/images/avatar-1.png" alt="{{about.name}}" width="80" data-modal-img>
+                </figure>
+        
+                <img src="./src/images/icon-quote.svg" alt="quote icon">
+              </div>
+        
+              <div class="modal-content">
+        
+                <h4 class="h3 modal-title" data-modal-title>{{about.name}}</h4>
+        
+                {# <time datetime="2021-06-14">14 June, 2021</time> #}
+        
+                <div data-modal-text>
+                  <p>
+                    {# lorem #}
+                  </p>
+                </div>
+        
+              </div>
+        
+            </section>
+        
+          </div>
+          
+        
+          
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
